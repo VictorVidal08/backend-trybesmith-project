@@ -10,8 +10,6 @@ const productsController = new ProductsController();
 
 router.get(
   '/products',
-  productValidation.nameValidation,
-  productValidation.amountValidation,
   productsController.getAll,
 );
 
